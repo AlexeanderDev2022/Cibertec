@@ -1,9 +1,9 @@
 from sqlalchemy import TIMESTAMP, Boolean, Column, Integer, String, func
-from bd.database import Base
+from configuracion.app.bd.database import Base
 
 
 class Estudiante(Base):
-    __tablename__ = "Estudiante" 
+    __tablename__ = "Estudiante"
     __table_args__ = {"schema": "public"}  # Especifica el esquema
 
     id_estudiante = Column(Integer, primary_key=True, index=True)

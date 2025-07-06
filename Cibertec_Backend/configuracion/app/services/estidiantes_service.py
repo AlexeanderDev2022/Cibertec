@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from models.estudiante import Estudiante
-from schemas.estudiante_shemas import EstCreateSchema
+from configuracion.app.models.estudiante import Estudiante
+from configuracion.app.schemas.estudiante_shemas import EstCreateSchema
 # from events.event_publisher import publish_event
 import datetime
 
@@ -41,13 +41,11 @@ def registrar_estudiante(db: Session, data: EstCreateSchema):
     }
 
 
-
 def consulta_mesa(db):
     estudiante = db.query(Estudiante).all()
     if estudiante == []:
         return "No hay Estudantes registrados"
     return estudiante
-
 
 
 # def consulta_mesa_Id(id, db):

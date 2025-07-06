@@ -1,8 +1,8 @@
 
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
-from utils.response_handler import handle_exception
-from routes.estudiante import documento as reg_estudinate
+from configuracion.app.utils.response_handler import handle_exception
+from configuracion.app.routes.estudiante import documento as reg_estudinate
 from fastapi.middleware.cors import CORSMiddleware
 
 

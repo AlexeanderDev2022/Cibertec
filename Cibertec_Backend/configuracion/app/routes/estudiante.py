@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from bd.database import SessionLocal
-from utils.response_handler import GenericResponse, handle_exception, handle_response
-from services.estidiantes_service import registrar_estudiante, consulta_mesa
-from schemas.estudiante_shemas import EstCreateSchema
+from configuracion.app.bd.database import SessionLocal
+from configuracion.app.utils.response_handler import GenericResponse, handle_exception, handle_response
+from configuracion.app.services.estidiantes_service import registrar_estudiante, consulta_mesa
+from configuracion.app.schemas.estudiante_shemas import EstCreateSchema
 
 documento = APIRouter()
 
