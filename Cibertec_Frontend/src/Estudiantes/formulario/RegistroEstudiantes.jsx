@@ -22,7 +22,7 @@ function RegistroEstudiantes() {
     const datos = { estudiante };
 
     try {
-      const respuesta = await fetch("http://localhost:8000/estudiante", {
+      const respuesta = await fetch("https://cibertec.onrender.com/estudiante", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

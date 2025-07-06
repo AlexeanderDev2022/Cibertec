@@ -7,7 +7,7 @@ const Lista = () => {
   const [alerta, setAlerta] = useState(null);
 
   useEffect(() => {
-    fetch("http://Localhost:8000/estudiante")
+    fetch("https://cibertec.onrender.com/estudiante")
       .then(response => response.json())
       .then(data => {
         setTimeout(() => {
