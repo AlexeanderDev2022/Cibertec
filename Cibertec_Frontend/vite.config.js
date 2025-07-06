@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 80,
-    host: true
+    host: true,
+    allowedHosts: ['cibertec-1.onrender.com']
 
   }
 })
