@@ -35,7 +35,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Cibertec_Frontend/build   # 👈 corregido
+          path: Cibertec_Frontend/dist   # 👈 corregido
 
   deploy:
     needs: build
