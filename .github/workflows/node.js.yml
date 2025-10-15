@@ -25,17 +25,17 @@ jobs:
           cache-dependency-path: Cibertec_Frontend/package-lock.json
 
       - name: Install dependencies
-        working-directory: ./Cibertec_Frontend
+        working-directory: ./Cibertec/Cibertec_Frontend
         run: npm install
 
       - name: Build project
-        working-directory: ./Cibertec_Frontend
+        working-directory: ./Cibertec/Cibertec_Frontend
         run: npm run build
 
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./Cibertec_Frontend/build  # 👈 carpeta generada por React
+          path: ./Cibertec/Cibertec_Frontend/build  # 👈 carpeta generada por React
 
   deploy:
     needs: build
