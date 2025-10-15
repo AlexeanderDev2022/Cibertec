@@ -10,5 +10,5 @@ export default defineConfig({
     allowedHosts: ['cibertec-1.onrender.com',]
 
   },
-  base:"/Cibertec"
+  base:"/Cibertec/"
 })
